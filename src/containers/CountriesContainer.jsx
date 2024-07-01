@@ -1,11 +1,13 @@
 import Country from "../components/Country"
 
-const CountriesContainer = () => {
+const CountriesContainer = ({countryList}) => {
 
   return(
     <>
-    <p>Hello from CountriesContainer</p>
-    <Country />
+    <h2>Countries: </h2>
+    {countryList.map(country => (
+      <Country country={country} />
+    ))}
     </>
   )
 

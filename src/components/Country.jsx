@@ -1,7 +1,10 @@
-const Country = () => {
+const Country = ({country}) => {
 
   return(
-    <p>Hello from Country</p>
+    <>
+    <h4>{country.flag + country.name.common + country.flag}</h4>
+    <button>Visited</button>
+    </>
   )
 
 }
